@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="18" failed="0" total="18" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="92858" started-at="2016-11-29T19:39:39Z" finished-at="2016-11-29T19:41:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="92858" started-at="2016-11-29T19:39:39Z" finished-at="2016-11-29T19:41:11Z">
+      <class name="automationFramework.TestNG">
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:39:39Z" finished-at="2016-11-29T11:39:39Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+2,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.2","maxVersion":"45.0.2"}],"targetPlatforms":[],"seen":true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {"id":"{C1A2A613-35F1-4FCF-B27F-2840527B6556}","syncGUID":"J0h64xVwd4qn","location":"winreg-app-global","version":"2016.8.1.8","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Norton Security Toolbar","description":"Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.","creator":"Symantec Corporation","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon","installDate":1480446312559,"updateDate":1480446312559,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":2192004,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"38.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":2,"seen":true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'ARC3', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+2,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.2","maxVersion":"45.0.2"}],"targetPlatforms":[],"seen":true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {"id":"{C1A2A613-35F1-4FCF-B27F-2840527B6556}","syncGUID":"J0h64xVwd4qn","location":"winreg-app-global","version":"2016.8.1.8","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Norton Security Toolbar","description":"Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.","creator":"Symantec Corporation","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon","installDate":1480446312559,"updateDate":1480446312559,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":2192004,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"38.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":2,"seen":true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'ARC3', ip: '192.168.2.5', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_73'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at automationFramework.TestNG.beforeMethod(TestNG.java:461)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+2,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"45.0.2","maxVersion":"45.0.2"}],"targetPlatforms":[],"seen":true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {"id":"{C1A2A613-35F1-4FCF-B27F-2840527B6556}","syncGUID":"J0h64xVwd4qn","location":"winreg-app-global","version":"2016.8.1.8","type":"extension","internalName":null,"updateURL":null,"updateKey":null,"optionsURL":null,"optionsType":null,"aboutURL":null,"icons":{"32":"icon.png","48":"icon.png"},"iconURL":null,"icon64URL":null,"defaultLocale":{"name":"Norton Security Toolbar","description":"Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.","creator":"Symantec Corporation","homepageURL":null},"visible":true,"active":false,"userDisabled":true,"appDisabled":false,"descriptor":"C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon","installDate":1480446312559,"updateDate":1480446312559,"applyBackgroundUpdates":1,"bootstrap":true,"skinnable":false,"size":2192004,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":true,"hasBinaryComponents":false,"strictCompatibility":false,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"38.0a1","maxVersion":"*"}],"targetPlatforms":[],"multiprocessCompatible":false,"signedState":2,"seen":true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1480448428783	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="animatedFilm()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="animatedFilm" duration-ms="2" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- animatedFilm -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="button()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="button" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- button -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="castCrew()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="castCrew" duration-ms="2" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- castCrew -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="clickLogo()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="clickLogo" duration-ms="2" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogo -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="communityItems()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="communityItems" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- communityItems -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="featured()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="featured" duration-ms="2" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- featured -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="festivals()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="festivals" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- festivals -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="genres()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="genres" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genres -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="genresNeg()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="genresNeg" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genresNeg -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="joinUs()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="joinUs" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- joinUs -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="loginPage()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="loginPage" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="main()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="main" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="newReleases()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="newReleases" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newReleases -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="playButton()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="playButton" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playButton -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="readMore()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="readMore" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readMore -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="related()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="related" duration-ms="1" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- related -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="signupPage()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="signupPage" duration-ms="6" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupPage -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="trailerButton()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="trailerButton" duration-ms="2" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trailerButton -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:automationFramework.TestNG@17e2f02]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-11-29T11:41:11Z" finished-at="2016-11-29T11:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- automationFramework.TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

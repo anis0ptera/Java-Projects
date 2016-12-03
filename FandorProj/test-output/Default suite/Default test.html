@@ -1,0 +1,592 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/18</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 29 11:39:39 PST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92858 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+2,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;45.0.2&quot;,&quot;maxVersion&quot;:&quot;45.0.2&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{C1A2A613-35F1-4FCF-B27F-2840527B6556}&quot;,&quot;syncGUID&quot;:&quot;J0h64xVwd4qn&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2016.8.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Norton Security Toolbar&quot;,&quot;description&quot;:&quot;Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.&quot;,&quot;creator&quot;:&quot;Symantec Corporation&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon&quot;,&quot;installDate&quot;:1480446312559,&quot;updateDate&quot;:1480446312559,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:2192004,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;ARC3&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at automationFramework.TestNG.beforeMethod(TestNG.java:461)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+2,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;45.0.2&quot;,&quot;maxVersion&quot;:&quot;45.0.2&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{C1A2A613-35F1-4FCF-B27F-2840527B6556}&quot;,&quot;syncGUID&quot;:&quot;J0h64xVwd4qn&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2016.8.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Norton Security Toolbar&quot;,&quot;description&quot;:&quot;Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.&quot;,&quot;creator&quot;:&quot;Symantec Corporation&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon&quot;,&quot;installDate&quot;:1480446312559,&quot;updateDate&quot;:1480446312559,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:2192004,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 33 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace26222602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26222602'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+2,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;45.0.2&quot;,&quot;maxVersion&quot;:&quot;45.0.2&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{C1A2A613-35F1-4FCF-B27F-2840527B6556}&quot;,&quot;syncGUID&quot;:&quot;J0h64xVwd4qn&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2016.8.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Norton Security Toolbar&quot;,&quot;description&quot;:&quot;Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.&quot;,&quot;creator&quot;:&quot;Symantec Corporation&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon&quot;,&quot;installDate&quot;:1480446312559,&quot;updateDate&quot;:1480446312559,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:2192004,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;ARC3&apos;, ip: &apos;192.168.2.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at automationFramework.TestNG.beforeMethod(TestNG.java:461)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+2,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:false,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:true,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;45.0.2&quot;,&quot;maxVersion&quot;:&quot;45.0.2&quot;}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true}
+1480448428679	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1480448428680	addons.xpi	DEBUG	Updating XPIState for {&quot;id&quot;:&quot;{C1A2A613-35F1-4FCF-B27F-2840527B6556}&quot;,&quot;syncGUID&quot;:&quot;J0h64xVwd4qn&quot;,&quot;location&quot;:&quot;winreg-app-global&quot;,&quot;version&quot;:&quot;2016.8.1.8&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:null,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{&quot;32&quot;:&quot;icon.png&quot;,&quot;48&quot;:&quot;icon.png&quot;},&quot;iconURL&quot;:null,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Norton Security Toolbar&quot;,&quot;description&quot;:&quot;Norton Safe Search and Safe Web warn you of dangerous sites when you search, shop or browse online.&quot;,&quot;creator&quot;:&quot;Symantec Corporation&quot;,&quot;homepageURL&quot;:null},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\ProgramData\\Norton\\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\\N360_22.5.2.15\\coFFAddon&quot;,&quot;installDate&quot;:1480446312559,&quot;updateDate&quot;:1480446312559,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:2192004,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;*&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1480448428681	DeferredSave.extensions.json	DEBUG	Save changes
+1480448428681	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1480448428681	addons.xpi-utils	DEBUG	Updating add-on states
+1480448428682	addons.xpi-utils	DEBUG	Writing add-ons list
+1480448428690	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\loop@mozilla.org.xpi
+1480448428762	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.1.14
+1480448428783	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1480448428783	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1480448428803	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1480448428804	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1480448428804	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1480448428804	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1480448428805	addons.manager	DEBUG	Starting provider: GMPProvider
+1480448428814	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1480448428815	addons.manager	DEBUG	Starting provider: PluginProvider
+1480448428815	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1480448428815	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1480448428816	addons.manager	DEBUG	Completed startup sequence
+1480448436830	DeferredSave.extensions.json	DEBUG	Starting timer
+1480448438121	DeferredSave.extensions.json	DEBUG	Starting write
+1480448438238	addons.repository	DEBUG	No addons.json found.
+1480448438239	DeferredSave.addons.json	DEBUG	Save changes
+1480448438338	DeferredSave.addons.json	DEBUG	Starting timer
+1480448441528	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1480448441529	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1480448441540	DeferredSave.addons.json	DEBUG	Starting write
+1480448441665	DeferredSave.extensions.json	DEBUG	Write succeeded
+1480448442414	DeferredSave.addons.json	DEBUG	Write succeeded
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 33 more
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.beforeMethod()'><b>beforeMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.afterMethod()'><b>afterMethod</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationFramework.TestNG.animatedFilm()'><b>animatedFilm</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.button()'><b>button</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.castCrew()'><b>castCrew</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.clickLogo()'><b>clickLogo</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.communityItems()'><b>communityItems</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.featured()'><b>featured</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.festivals()'><b>festivals</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.genres()'><b>genres</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.genresNeg()'><b>genresNeg</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.joinUs()'><b>joinUs</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.loginPage()'><b>loginPage</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.main()'><b>main</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.newReleases()'><b>newReleases</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.playButton()'><b>playButton</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.readMore()'><b>readMore</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.related()'><b>related</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.signupPage()'><b>signupPage</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+<tr>
+<td title='automationFramework.TestNG.trailerButton()'><b>trailerButton</b><br>Test class: automationFramework.TestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.TestNG@17e2f02</td></tr>
+</table><p>
+</body>
+</html>
